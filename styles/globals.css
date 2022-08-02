@@ -1,3 +1,42 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.top-navigation-icon {
+    @apply p-2.5 mr-2 my-auto
+    cursor-pointer;
+}
+
+.top-navigation {
+    @apply flex flex-row items-center justify-between 
+    bg-gray-200 dark:bg-gray-800 bg-opacity-90 
+    w-full h-16 
+    m-0 
+    shadow-lg;
+}
+
+.top-navigation-button {
+    @apply text-lg tracking-wider font-semibold 
+    ml-2 my-auto;
+}
+
+.top-navigation-button {
+    @apply inline-block px-6 py-2.5 
+    font-medium text-sm font-semibold 
+  }
+
+
+.top-navigation-colors {
+    @apply leading-tight
+    rounded shadow-md
+    bg-purple-500 text-black
+    dark:bg-purple-600 dark:text-slate-100
+    hover:bg-purple-600 hover:shadow-lg 
+    dark:hover:bg-purple-700
+    focus:bg-purple-600 focus:shadow-lg 
+    focus:outline-none focus:ring-0 
+    dark:focus:bg-purple-700
+    active:bg-purple-700 active:shadow-lg 
+    transition duration-150 ease-in-out
+    dark:active:bg-purple-800
+}
