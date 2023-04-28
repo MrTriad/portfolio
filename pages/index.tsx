@@ -3,6 +3,8 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import { FaArrowDown } from 'react-icons/fa'
 import TopNavbar from './components/TopNavbar'
+import { Canvas } from "@react-three/fiber";
+import Koboldino from "./components/Koboldino"
 
 const Home: NextPage = () => {
   return (
@@ -27,7 +29,9 @@ const Home: NextPage = () => {
               aka triad
               </p>
             </div>
-            <div className='w-1/3 bg-slate-600'></div>
+            <div id='model' className='w-1/3 '>
+              <Koboldino />
+            </div>
             <div className="animate-bounce w-6 h-6">
             <FaArrowDown />
             </div>
